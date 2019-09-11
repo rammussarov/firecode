@@ -3,11 +3,13 @@ package io.firecode;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+
 public class FirstNonDuplicateChar {
 
     public static void main(String[] args) {
-        System.out.println(firstNonRepeatedCharacter("abcdcd"));
-        System.out.println(firstNonRepeatedCharacter("cdcd"));
+        assertEquals(firstNonRepeatedCharacter("abcdcd"), new Character('a'));
+        assertEquals(firstNonRepeatedCharacter("cdcd"), null);
     }
 
     private static Character firstNonRepeatedCharacter(String str) {

@@ -3,6 +3,8 @@ package io.firecode;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Write a method that returns a number that appears only once in an array.
  * Assume the array will surely have a unique value. The array will never be empty.
@@ -10,7 +12,7 @@ import java.util.Map;
 public class NumberAppearOnce {
 
     public static void main(String[] args) {
-        System.out.println(singleNumber(new int[]{1,2,3,4,1,2,4,3,5}));
+        assertEquals(singleNumber(new int[]{1,2,3,4,1,2,4,3,5}), 5);
     }
 
     private static int singleNumber(int[] A) {

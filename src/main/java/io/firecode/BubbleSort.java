@@ -2,6 +2,8 @@ package io.firecode;
 
 import java.util.Arrays;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Write a method that takes in an array of ints and uses the Bubble Sort algorithm to sort the array 'in place' in ascending order.
  * The method should return the same, in-place sorted array.
@@ -13,8 +15,8 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(bubbleSortArray(new int[]{5, 4, 3})));
-        System.out.println(Arrays.toString(bubbleSortArray(new int[]{3})));
+        assertEquals(Arrays.toString(bubbleSortArray(new int[]{5, 4, 3})), "[3, 4, 5]");
+        assertEquals(Arrays.toString(bubbleSortArray(new int[]{3})), "[3]");
     }
 
     private static int[] bubbleSortArray(int[] arr) {

@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Write a method duplicate to find the repeated or duplicate elements in an array.
  * This method should return a list of repeated integers in a string with the elements sorted in ascending order (as illustrated below).
@@ -20,7 +22,7 @@ import java.util.Map;
 public class MultipleRepeatedNumber {
 
     public static void main(String[] args) {
-        System.out.println(duplicate(new int[]{1, 3, 4, 2, 1, 2, 4}));
+        assertEquals(duplicate(new int[]{1, 3, 4, 2, 1, 2, 4}), "[1, 2, 4]");
     }
 
     private static String duplicate(int[] numbers) {

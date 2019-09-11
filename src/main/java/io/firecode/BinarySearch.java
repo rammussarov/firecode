@@ -2,6 +2,8 @@ package io.firecode;
 
 import java.util.Arrays;
 
+import static junit.framework.TestCase.assertTrue;
+
 /**
  * Write a method that searches an Array of integers for a given integer using the
  * Binary Search Algorithm. If the input integer is found in the array, return true. Otherwise, return false.
@@ -22,7 +24,7 @@ import java.util.Arrays;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        System.out.println(binarySearch(new int[]{2, 5, 7, 9, 12}, 2));
+        assertTrue(binarySearch(new int[]{2, 5, 7, 9, 12}, 2));
     }
 
     private static Boolean binarySearch(int[] arr, int n) {

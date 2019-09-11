@@ -1,5 +1,7 @@
 package io.firecode;
 
+import static org.junit.Assert.*;
+
 /**
  * Write a method that takes in an input String and returns true if all the characters in the String are unique and false if there is even a single repeated character.
  * The method should return true if the input is null or empty String.
@@ -16,10 +18,10 @@ package io.firecode;
 public class AllUniqueChars {
 
     public static void main(String[] args) {
-        System.out.println(areAllCharactersUnique("abcde"));
-        System.out.println(areAllCharactersUnique("aa"));
-        System.out.println(areAllCharactersUnique(""));
-        System.out.println(areAllCharactersUnique(null));
+        assertTrue(areAllCharactersUnique("abcde"));
+        assertFalse(areAllCharactersUnique("aa"));
+        assertTrue(areAllCharactersUnique(""));
+        assertTrue(areAllCharactersUnique(null));
     }
 
     private static boolean areAllCharactersUnique(String str){
